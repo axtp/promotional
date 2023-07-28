@@ -42,7 +42,7 @@ const Section = styled.section`
 
     .subtitle {
       color: ${themeGet('colors.secondary')};
-      font-family: 'Caveat', cursive;
+      font-family: 'Roboto', cursive;
       font-weight: 700;
       font-size: 28px;
       color: ${themeGet('colors.secondary')};

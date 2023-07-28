@@ -16,7 +16,7 @@ export const theme = {
     mega: '0.25em',
   },
   fonts: {
-    dmsans: "'DM Sans', sans-serif",
+    dmsans: "'Roboto', sans-serif",
   },
   borders: [0, '1px solid', '2px solid', '4px solid'],
   radius: [0, 3, 5, 10, 15, 20, 25, 50, 60, '50%'],

@@ -227,108 +227,77 @@ export const testimonials = [
 export const footer = {
   about: {
     logo: siteLogo,
-    text: `We run Advanced Search reports on the criteria you care about to see how work is progressing and where to focus your effort.`,
+    text: `Somos uma empresa de tecnologia especializada em blockchain e à aplicando de forma inovadora na construção de patrimônio.`,
   },
   widgets: [
     {
       id: 2,
-      title: 'About Us',
+      title: 'Sobre A Empresa',
       list: [
         {
           id: 1,
-          title: 'Support Center',
-          link: '#',
+          title: 'Home Page',
+          link: 'https://axtp.com.br',
         },
         {
           id: 2,
-          title: 'Customer Support',
-          link: '#',
-        },
-        {
-          id: 3,
-          title: 'About Us',
-          link: '#',
-        },
-        {
-          id: 4,
-          title: 'Copyright',
-          link: '#',
-        },
-        {
-          id: 5,
-          title: 'Popular Campaign',
-          link: '#',
+          title: 'Campanha Atual',
+          link: 'https://masterclass.axtp.com.br',
         },
       ],
     },
     {
       id: 3,
-      title: 'Our Information',
+      title: 'Políticas',
       list: [
         {
-          id: 1,
-          title: 'Return Policy ',
-          link: '#',
-        },
-        {
           id: 2,
-          title: 'Privacy Policy',
-          link: '#',
+          title: 'Política de Privacidade',
+          link: 'https://www.axtp.com.br/policy/privacy',
         },
         {
           id: 3,
-          title: 'Terms & Conditions',
-          link: '#',
-        },
-        {
-          id: 4,
-          title: 'Site Map',
-          link: '#',
-        },
-        {
-          id: 5,
-          title: 'Store Hours',
-          link: '#',
+          title: 'Termos de Uso',
+          link: 'https://www.axtp.com.br/policy/usage',
         },
       ],
     },
-    {
-      id: 4,
-      title: 'My Account',
-      list: [
-        {
-          id: 1,
-          title: 'Press inquiries',
-          link: '#',
-        },
-        {
-          id: 2,
-          title: 'Social media ',
-          link: '#',
-        },
-        {
-          id: 3,
-          title: 'directories',
-          link: '#',
-        },
-        {
-          id: 4,
-          title: 'Images & B-roll',
-          link: '#',
-        },
-        {
-          id: 5,
-          title: 'Permissions',
-          link: '#',
-        },
-      ],
-    },
+    // {
+    //   id: 4,
+    //   title: 'My Account',
+    //   list: [
+    //     {
+    //       id: 1,
+    //       title: 'Press inquiries',
+    //       link: '#',
+    //     },
+    //     {
+    //       id: 2,
+    //       title: 'Social media ',
+    //       link: '#',
+    //     },
+    //     {
+    //       id: 3,
+    //       title: 'directories',
+    //       link: '#',
+    //     },
+    //     {
+    //       id: 4,
+    //       title: 'Images & B-roll',
+    //       link: '#',
+    //     },
+    //     {
+    //       id: 5,
+    //       title: 'Permissions',
+    //       link: '#',
+    //     },
+    //   ],
+    // },
   ],
   contactInfo: {
-    title: 'Contact info',
-    address: `Amsterdam, Netherlands`,
-    phone: `+31 62 19 22 705`,
-    openingTime: `7 Days - 8am - 10pm`,
-    email: `info@redqteam.com`,
+    title: 'Contato',
+    address: `Jundiai, SP, Brasil`,
+    phone: `+55 11 91636-0102`,
+    email: `info@axtp.com`,
   },
 };

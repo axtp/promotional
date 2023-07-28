@@ -26,7 +26,7 @@ export const SectionHeading = styled.div`
   margin: 0 auto 70px;
   span {
     color: ${themeGet('colors.secondary')};
-    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', cursive;
     font-weight: 700;
     font-size: 28px;
     color: ${themeGet('colors.secondary')};

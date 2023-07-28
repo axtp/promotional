@@ -111,7 +111,7 @@ export const Content = styled.div`
   }
   .subtitle {
     color: ${themeGet('colors.secondary')};
-    font-family: 'Caveat', cursive;
+    font-family: 'Roboto', cursive;
     font-weight: 700;
     font-size: 28px;
     color: ${themeGet('colors.secondary')};
