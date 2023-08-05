@@ -1,0 +1,12 @@
+.stickyImage {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    opacity: 0.8;
+    z-index: 1000;
+    width: 128px;
+    @media (max-width: 480px) {
+        width: 80px
+    }
+
+}

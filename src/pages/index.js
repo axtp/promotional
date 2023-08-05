@@ -14,7 +14,11 @@ import Testimonials from 'containers/SaasAppDark/Testimonials';
 import VideoIntro from 'containers/SaasAppDark/VideoIntro';
 import Head from 'next/head';
 import React, { Fragment } from 'react';
-import { ThemeProvider } from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import {StickyLogo} from "../common/components/StickyLogo";
+
+
+
 
 const SaasAppDark = () => {
 	return (
@@ -24,18 +28,6 @@ const SaasAppDark = () => {
 					<title>AXT PropTech | MasterClass 2023</title>
 					<meta name="Description" content="AXT PropTech MasterClass 2023. Aprenda sobre formas de investimentos alternativas" />
 					<meta name="theme-color" content="#ec5555" />
-					{/* Load google fonts */}
-					<link rel="preconnect" href="https://fonts.googleapis.com" />
-					<link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
-					<link
-						href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-						rel="stylesheet"
-					/>
-
-					<link
-						rel="stylesheet"
-						href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=DM+Sans:wght@400&family=Inter:wght@400;500;600&family=Manrope:wght@700&family=Noto+Serif+KR:wght@700;900&display=swap"
-					/>
 				</Head>
 
 				<ResetCSS />
@@ -47,6 +39,7 @@ const SaasAppDark = () => {
 					{/*		<Navbar />*/}
 					{/*	</DrawerProvider>*/}
 					{/*</Sticky>*/}
+					<StickyLogo />
 					<Banner />
 					<Clients />
 					<Services />
