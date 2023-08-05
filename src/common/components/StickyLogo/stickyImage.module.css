@@ -8,5 +8,8 @@
     @media (max-width: 480px) {
         width: 80px
     }
-
+    transition: opacity ease-in-out 300ms;
+}
+.stickyImage:hover {
+    opacity: 1.0;
 }

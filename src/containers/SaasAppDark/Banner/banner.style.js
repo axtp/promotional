@@ -97,9 +97,9 @@ export const Buttons = styled.div`
 	gap: 15px;
 	display: inline-grid;
 	margin-top: 35px;
-	grid-template-columns: repeat(2, 1fr);
 	@media only screen and (min-width: 768px) {
-		gap: 20px;
+	  grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
 	}
 	button {
 		font-size: 14px;
@@ -188,31 +188,36 @@ export const Figure = styled.figure`
 	text-align: center;
 	z-index: 1;
 	> div {
-		filter: drop-shadow(0px 4px 50px rgba(86, 99, 132, 0.1));
+      filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.7));
 	}
-	@media (min-width: 768px) {
-		margin-top: 60px;
-		max-width: 600px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	@media (min-width: 1024px) {
-		max-width: 720px;
-		margin-top: 50px;
-	}
-	@media (min-width: 1280px) {
-		max-width: 920px;
-	}
-	@media (min-width: 1366px) {
-		max-width: 1040px;
-	}
-	@media (min-width: 1440px) {
-		max-width: 90%;
-	}
-	@media (min-width: 1600px) {
-		margin-top: 60px;
-		max-width: 100%;
-	}
+    > img {
+      border-radius: 8px;
+      filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.7));
+      height: auto
+    }
+	//@media (min-width: 768px) {
+	//	margin-top: 60px;
+	//	max-width: 600px;
+	//	margin-left: auto;
+	//	margin-right: auto;
+	//}
+	//@media (min-width: 1024px) {
+	//	max-width: 720px;
+	//	margin-top: 50px;
+	//}
+	//@media (min-width: 1280px) {
+	//	max-width: 920px;
+	//}
+	//@media (min-width: 1366px) {
+	//	max-width: 1040px;
+	//}
+	//@media (min-width: 1440px) {
+	//	max-width: 90%;
+	//}
+	//@media (min-width: 1600px) {
+	//	margin-top: 60px;
+	//	max-width: 100%;
+	//}
 	.banner-bubble {
 		position: absolute;
 		z-index: -1;

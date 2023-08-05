@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useRef} from 'react';
 import Container from 'common/components/UI/Container';
 import Text from 'common/components/Text';
 import Button from 'common/components/Button';
@@ -12,14 +12,14 @@ import Section, {
   Figure,
 } from './banner.style';
 import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
-import dashboard from 'common/assets/image/saasAppDark/banner-dashboard.png';
+import dashboard from 'common/assets/image/saasAppDark/mockup_highway_masterclass.jpg';
 import {Modal} from '@nextui-org/react';
 import {useState} from 'react';
 import {Constants} from "../../../constants";
+import YoutubeVideo from "common/components/YoutubeVideo";
 
 const Banner = () => {
   const [openModal, setModal] = useState(false);
-
   return (
     <Section id="home">
       <Container width="1300px">
@@ -58,14 +58,13 @@ const Banner = () => {
               </button>
             </Buttons>
           </BannerContent>
-          <Figure className="hero-banner">
+          <Figure className="animate__animated animate__fadeInUp">
             <NextImage src={dashboard} alt="dashboard"/>
           </Figure>
         </BannerContentWrapper>
       </Container>
       <Modal
         blur
-        width='850px'
         aria-labelledby="Search Panel"
         open={openModal}
         onClose={() => setModal(false)}
@@ -73,14 +72,10 @@ const Banner = () => {
         css={{
           background: 'transparent !important',
           borderRadius: '0px !important',
+          maxWidth: '800px'
         }}
       >
-        <div style={{margin: 'auto'}}>
-          <iframe width="850" height="505" src="https://www.youtube.com/embed/hW98BFnVCm8"
-                  title="Cartsy - Super Fast WooCommerce Theme" frameborder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen></iframe>
-        </div>
+          <YoutubeVideo videoId="hW98BFnVCm8" title="Masterclass - AXT PropTech Company" autoPlay={true}/>
       </Modal>
     </Section>
   );
