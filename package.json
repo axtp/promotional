@@ -59,6 +59,7 @@
     "react-tabs": "^5.1.0",
     "react-tsparticles": "^2.9.3",
     "react-waypoint": "10.3.0",
+    "sharp": "^0.32.4",
     "styled-components": "^5.3.6",
     "styled-system": "5.1.5",
     "swiper": "^8.4.4",
@@ -66,8 +67,8 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^2.0.7",
+    "husky": "^8.0.0",
     "imagemin-optipng": "^8.0.0",
-    "imagemin-svgo": "^10.0.1",
-    "husky": "^8.0.0"
+    "imagemin-svgo": "^10.0.1"
   }
 }
