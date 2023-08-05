@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from "react";
+import React, {useState, useEffect, useCallback, useRef, useLayoutEffect} from "react";
 import PropTypes from "prop-types";
 const YoutubeVideo = ({ videoId, autoPlay, title }) => {
   const videoURL = `https://www.youtube.com/embed/${videoId}${
@@ -38,6 +38,9 @@ const YoutubeVideo = ({ videoId, autoPlay, title }) => {
     const height = iframeRef.current
       ? iframeRef.current.offsetWidth * 0.5625
       : defaultHeight;
+
+    console.log("heigt, width", height,  iframeRef.current.offsetWidth)
+
     setVideoHeight(Math.floor(height * ratio));
     return function cleanup() {
       window.removeEventListener("resize", handleChangeVideoWidth);

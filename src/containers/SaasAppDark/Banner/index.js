@@ -15,6 +15,7 @@ import {Modal} from '@nextui-org/react';
 import {useState} from 'react';
 import {Constants} from "../../../constants";
 import YoutubeVideo from "common/components/YoutubeVideo";
+import {important} from "polished";
 
 const Banner = () => {
   const [openModal, setModal] = useState(false);
@@ -63,14 +64,14 @@ const Banner = () => {
       </Container>
       <Modal
         blur
+        width="800px"
         aria-labelledby="Search Panel"
         open={openModal}
         onClose={() => setModal(false)}
         justify="center"
         css={{
-          background: 'transparent !important',
-          borderRadius: '0px !important',
-          maxWidth: '800px'
+          borderRadius: "8px !important",
+          maxWidth: '800px',
         }}
       >
           <YoutubeVideo videoId="hW98BFnVCm8" title="Masterclass - AXT PropTech Company" autoPlay={true}/>
