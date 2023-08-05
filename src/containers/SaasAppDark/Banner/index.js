@@ -12,7 +12,7 @@ import Section, {
   Figure,
 } from './banner.style';
 import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
-import dashboard from 'common/assets/image/saasAppDark/mockup_highway_masterclass.jpg';
+import dashboard from 'public/mockup_highway_masterclass.jpg';
 import {Modal} from '@nextui-org/react';
 import {useState} from 'react';
 import {Constants} from "../../../constants";
