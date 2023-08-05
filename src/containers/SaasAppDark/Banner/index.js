@@ -1,18 +1,16 @@
-import React, {useEffect, useRef} from 'react';
+import React from 'react';
 import Container from 'common/components/UI/Container';
 import Text from 'common/components/Text';
 import Button from 'common/components/Button';
 import NextImage from 'common/components/NextImage';
-import Image from 'common/components/Image';
 import Section, {
   BannerContentWrapper,
   BannerContent,
-  VideoWrapper,
   Buttons,
   Figure,
 } from './banner.style';
 import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
-import dashboard from 'public/mockup_highway_masterclass.jpg';
+import dashboard from 'common/assets/image/saasAppDark/mockup_highway_masterclass.jpg';
 import {Modal} from '@nextui-org/react';
 import {useState} from 'react';
 import {Constants} from "../../../constants";
