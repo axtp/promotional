@@ -218,7 +218,7 @@ export const testimonials = [
     videoId: "926e270c-bff1-4681-9681-596be47a3b54",
     author: 'Danniel Covo',
     designation: 'Pro-Trader, Investidor, CMO AXT PropTech S/A',
-    quote: `We deliver on such an expansive with innovation agenda with so many theme projects going on at any time, it can be hard to maintain momentum. So We appreciate to work with them.`,
+    quote: '"A gente vai fazer uma masterclass ensinando os princípios como participar desse jogo sem tem que ter aquelas quantidades absurdas de dinheiro..."',
   }
 ];
 

@@ -44,10 +44,12 @@ const PersonContainer = styled.div`
   position: relative;
   height: 100%;
   width: 100%;
+  margin: 0 auto;
 `
 
 const PersonImage = styled(Image)`
   position: relative;
+  margin: 0 auto;
   max-height: 200px;
   border-radius: 4px;
 `
@@ -57,8 +59,10 @@ const Quote = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  text-align: left;
   gap: 1rem;
   @media (max-width: 600px) {
+    text-align: justify;
     flex-direction: column;
     align-items: center;
   }
@@ -68,6 +72,12 @@ const VideoButton = styled(PlayButton)`
   left: 25%;
   bottom: 10%;
   opacity: 0.8;
+
+  @media (max-width: 600px) {
+    left: 40%;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 const Testimonials = () => {
   const [openModal, setModal] = useState(false);
