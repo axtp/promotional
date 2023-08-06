@@ -2,11 +2,9 @@ import styled from 'styled-components';
 import FooterIamge from 'common/assets/image/agency/footer-bg.png';
 
 const FooterWrapper = styled.section`
-  padding: 80px 0 55px;
   margin-top: 40px;
   background-color: rgb(246, 249, 252);
   @media (max-width: 480px) {
-    padding: 60px 0 30px;
   }
   .copyrightClass {
     @media (max-width: 1024px) {
@@ -20,12 +18,12 @@ const FooterWrapper = styled.section`
         margin-top: 10px;
         margin-bottom: 10px;
         justify-content: left;
-        align-items: left;
+        align-items: start;
         margin-left: 0;
       }
       @media (max-width: 767px) {
         justify-content: left;
-        align-items: left;
+        align-items: start;
         margin-left: 0;
         margin-top: 10px;
         margin-bottom: 10px;

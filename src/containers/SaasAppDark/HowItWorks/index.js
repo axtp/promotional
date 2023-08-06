@@ -51,7 +51,7 @@ const HowItWorks = () => {
             <Text
               className="description"
             >
-              Os participantes do primeiro lote, ganharam o ingresso para a próxima MasterClass Presencial em SP
+              Os participantes do primeiro lote, ganharam o ingresso para a próxima Masterclass Presencial em SP
             </Text>
             <FeatureList>
               {howItWorksFeatures?.map((feature) => (

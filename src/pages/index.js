@@ -56,14 +56,14 @@ const SaasAppDark = () => {
         <ContentWrapper>
           <StickyLogo/>
           <Banner/>
-          <Clients/>
-          <Services/>
+          {/*<Clients/>*/}
+          {/*<Services/>*/}
           {/*<StatsCounter/>*/}
           <VideoIntro/>
           <Testimonials/>
           <HowItWorks/>
           {/*<NewsFeed/>*/}
-          {/*<CallToAction/>*/}
+          <CallToAction/>
           {/*<AppDownload/>*/}
           <Footer/>
         </ContentWrapper>

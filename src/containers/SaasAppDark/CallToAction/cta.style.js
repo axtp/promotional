@@ -1,5 +1,5 @@
 import { themeGet } from '@styled-system/theme-get';
-import bg from 'common/assets/image/saasAppDark/cta-bg-1.png';
+import bg from 'common/assets/image/saasAppDark/axtp-bg.jpg';
 import styled from 'styled-components';
 
 const Section = styled.section`
@@ -37,15 +37,15 @@ export const BGImage = styled.div`
   @media only screen and (max-width: 1440px) {
     padding: 75px 0;
   }
-  // @media only screen and (max-width: 1024px) {
-  //   background-size: contain;
-  // }
+   @media only screen and (max-width: 1024px) {
+     background-size: contain;
+   }
 `;
 
 export const SectionHeading = styled.div`
-  text-align: center;
-  max-width: 710px;
+  max-width: 1024px;
   margin: 0 auto;
+  text-align: center;
   @media only screen and (max-width: 767px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -86,9 +86,10 @@ export const SectionHeading = styled.div`
     }
   }
   p {
+    text-align: justify;
     font-size: 17px;
     line-height: 2.06;
-    margin: 0 auto;
+    margin: 1rem auto;
     max-width: 650px;
     @media only screen and (max-width: 667px) {
       font-size: 15px;
@@ -96,6 +97,7 @@ export const SectionHeading = styled.div`
     }
   }
   button {
+    text-align: center;
     border-radius: 50px;
     margin-top: 40px;
     font-weight: 500;
