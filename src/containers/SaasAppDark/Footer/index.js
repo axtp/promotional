@@ -37,21 +37,25 @@ const Footer = () => {
             <Heading as="h4" content={footer.contactInfo.title} />
             <InfoItem>
               <Icon icon={ic_place} size={24} />
-              <Text content={footer.contactInfo.address} />
+              <Text>
+                {footer.contactInfo.address}
+              </Text>
             </InfoItem>
             <InfoItem>
               <Icon icon={ic_phone} size={26} className="phone-icon" />
               <div>
                 <Text
                   className="phone-number"
-                  content={footer.contactInfo.phone}
-                />
-                <Text content={footer.contactInfo.openingTime} />
+                >
+                  {footer.contactInfo.phone}
+                </Text>
               </div>
             </InfoItem>
             <InfoItem>
               <Icon icon={paperPlane} size={22} />
-              <Text content={footer.contactInfo.email} />
+              <Text>
+                {footer.contactInfo.email}
+              </Text>
             </InfoItem>
           </ContactInfo>
         </Grid>

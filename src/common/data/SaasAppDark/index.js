@@ -50,8 +50,8 @@ import post1 from 'common/assets/image/saasAppDark/post1.png';
 import post2 from 'common/assets/image/saasAppDark/post2.png';
 import post3 from 'common/assets/image/saasAppDark/post3.png';
 // testimonials section
-import logo1 from 'common/assets/image/saasAppDark/tm-logo1.svg';
-import logo2 from 'common/assets/image/saasAppDark/tm-logo2.svg';
+import danielHeuri from 'common/assets/image/saasAppDark/daniel_heuri.jpg';
+import danielCovo from 'common/assets/image/saasAppDark/daniell_covo.jpg';
 import logo3 from 'common/assets/image/saasAppDark/tm-logo3.svg';
 export const clients = [envato, evernote, forbes, geekwire, slack, usaToday];
 
@@ -144,18 +144,28 @@ export const videoIntro = {
   features: [
     {
       id: 1,
-      title: '1-month Free Trial',
-      desc: 'We are open for trial sessions',
+      title: 'Renda em dolar',
+      desc: 'Você que deseja ter uma renda em dólar e construir patrimônio nos Estados Unidos.',
     },
     {
       id: 2,
-      title: 'Sales Widgets',
-      desc: 'Stay on top of your task lists',
+      title: 'Fontes de renda alternativa',
+      desc: 'Você que busca novas fontes de rentabilizar o seu capital, principalmente, em uma moeda forte como o dólar.',
     },
     {
       id: 3,
-      title: 'Free security update',
-      desc: 'Every month we provide updates',
+      title: 'Aproveitar Conhecimento',
+      desc: 'Você que gostaria de seguir uma metodologia comprovada e segura para investir no mercado imobiliário, por alguém que conhece e já fez isso na prática.',
+    },
+    {
+      id: 4,
+      title: 'Saber mais sobre o Mercado Imobiliário Americano',
+      desc: 'Você que necessita saber mais sobre os processos, legalidades e possíveis riscos de investir no Mercado Imobiliário Americano',
+    },
+    {
+      id: 5,
+      title: 'Conhecer novas oportunidades',
+      desc: 'Você que busca entender mais os caminhos e oportunidades a serem exploradas nesse mercado.',
     },
   ],
 };
@@ -196,32 +206,20 @@ export const posts = [
 export const testimonials = [
   {
     id: 1,
-    logo: logo1,
-    author: 'Johnny Simpson',
-    designation: 'Head of Design',
-    quote: `Each room is loaded with the most collaborative surfaces so you can quickly take notes, capture to-dos, and share ideas. Pick one of our stock themes, or create your custom theme with the editors.`,
+    logo: danielHeuri,
+    videoId: '926e270c-bff1-4681-9681-596be47a3b54',
+    author: 'Daniel Heuri',
+    designation: 'CEO NXT Advisors, CEO AXT PropTech S/A',
+    quote: '"A gente vai fazer uma masterclass ensinando os princípios como participar desse jogo sem tem que ter aquelas quantidades absurdas de dinheiro..."',
   },
   {
     id: 2,
-    logo: logo2,
-    author: 'Deanna Hodges',
-    designation: 'Business HR Admin',
+    logo: danielCovo,
+    videoId: "926e270c-bff1-4681-9681-596be47a3b54",
+    author: 'Danniel Covo',
+    designation: 'Pro-Trader, Investidor, CMO AXT PropTech S/A',
     quote: `We deliver on such an expansive with innovation agenda with so many theme projects going on at any time, it can be hard to maintain momentum. So We appreciate to work with them.`,
-  },
-  {
-    id: 3,
-    logo: logo3,
-    author: 'Gracelyn Mason',
-    designation: 'Senior Marketer',
-    quote: `Flat item is loaded with the most of collaborative surfaces so you can do quickly take notes, capture to-dos, and share ideas. Pick one of our stock themes, or create your custom theme with statics.`,
-  },
-  {
-    id: 4,
-    logo: logo1,
-    author: 'Gracelyn Mason',
-    designation: 'Senior Marketer',
-    quote: `Flat item is loaded with the most of collaborative surfaces so you can do quickly take notes, capture to-dos, and share ideas. Pick one of our stock themes, or create your custom theme with statics.`,
-  },
+  }
 ];
 
 export const footer = {

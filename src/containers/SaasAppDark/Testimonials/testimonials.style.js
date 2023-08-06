@@ -139,5 +139,69 @@ export const Item = styled.div`
 `
 
 export const AuthorInfo = styled.div`
+  position: relative;
   margin-top: auto;
 `
+
+export const PlayButton = styled.button`
+  background-color: ${themeGet('colors.primary')};
+  border-radius: 50%;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  &:before {
+    content: '';
+    position: absolute;
+    border: ${themeGet('colors.primary')} solid 6px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: inherit;
+  }
+  &:hover {
+    &:before {
+      animation: var(--HvrRippleOut);
+      animation-iteration-count: infinite;
+    }
+  }
+  
+  >img {
+    height: 20px;
+    width: 20px
+  }
+`;
+
+export const Figure = styled.figure`
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 0 auto;
+  > div {
+  }
+  @media (min-width: 768px) {
+    max-width: 600px;
+  }
+  @media (min-width: 1024px) {
+    max-width: 720px;
+  }
+  @media (min-width: 1366px) {
+    max-width: 1040px;
+  }
+  @media (min-width: 1280px) {
+    max-width: 9200px;
+  }
+  @media (min-width: 1440px) {
+    max-width: 90%;
+  }
+  @media (min-width: 1600px) {
+    max-width: 100%;
+  }
+`;

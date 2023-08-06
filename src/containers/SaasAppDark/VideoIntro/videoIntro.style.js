@@ -106,58 +106,16 @@ export const Figure = styled.figure`
   }
 `;
 
-export const PlayButton = styled.button`
-  background-color: ${themeGet('colors.primary')};
-  border-radius: 50%;
-  border: 0;
-  cursor: pointer;
-  position: absolute;
-  height: 95px;
-  width: 95px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  @media only screen and (max-width: 991px) {
-    height: 70px;
-    width: 70px;
-    > img {
-      max-width: 18px;
-    }
-  }
-  @media only screen and (max-width: 600px) {
-    height: 60px;
-    width: 60px;
-    > img {
-      max-width: 15px;
-    }
-  }
-  &:before {
-    content: '';
-    position: absolute;
-    border: ${themeGet('colors.primary')} solid 6px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-radius: inherit;
-  }
-  &:hover {
-    &:before {
-      animation: var(--HvrRippleOut);
-      animation-iteration-count: infinite;
-    }
-  }
-`;
 
-export const IntroFeatures = styled.div`
-  gap: 80px;
-  display: grid;
+
+export const IntroFeatures2 = styled.div`
+  gap: 20px;
+  display: flex;
   margin-top: 60px;
   justify-content: center;
-  grid-template-columns: repeat(3, max-content);
+  flex-direction: column;
   @media only screen and (max-width: 1024px) {
-    gap: 50px;
+    gap: 20px;
   }
   @media only screen and (max-width: 991px) {
     gap: 25px;

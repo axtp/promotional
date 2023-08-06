@@ -8,7 +8,7 @@ import Container from 'common/components/UI/Container';
 import { videoIntro } from 'common/data/SaasAppDark';
 import { useState } from 'react';
 import Section, {
-  FeatureItem, Figure, IntroFeatures, PlayButton, SectionHeading
+  FeatureItem, Figure, IntroFeatures2, PlayButton, SectionHeading
 } from './videoIntro.style';
 
 
@@ -20,17 +20,15 @@ const VideoIntro = () => {
     <Section id="portfolio">
       <Container width="1170px">
         <SectionHeading>
-          <Text as="span" content="Key selling points" />
-          <Heading content="Grain is an essential part of your daily workflow." />
-          <Text content="Pick one of our stock themes, or create your custom theme with the most advanced theme editor on any online survey building tool. Create professional ads." />
+          <Text as="h2">Importante para</Text>
         </SectionHeading>
-        <Figure>
-          <NextImage src={banner} alt="video banner" />
-          <PlayButton onClick={() => setModal(true)}>
-            <img src={playIcon?.src} alt="play Icon" />
-          </PlayButton>
-        </Figure>
-        <IntroFeatures>
+        {/*<Figure>*/}
+        {/*  <NextImage src={banner} alt="video banner" />*/}
+        {/*  <PlayButton onClick={() => setModal(true)}>*/}
+        {/*    <img src={playIcon?.src} alt="play Icon" />*/}
+        {/*  </PlayButton>*/}
+        {/*</Figure>*/}
+        <IntroFeatures2>
           {features.map((feature) => (
             <FeatureItem key={feature.id}>
               <svg
@@ -47,28 +45,28 @@ const VideoIntro = () => {
               </svg>
               <div>
                 <Heading as="h4" content={feature.title} />
-                <Text content={feature.desc} />
+                <Text as="p">{feature.desc}</Text>
               </div>
             </FeatureItem>
           ))}
-        </IntroFeatures>
+        </IntroFeatures2>
       </Container>
-      <Modal
-        blur
-        width='850px'
-        aria-labelledby="Search Panel"
-        open={openModal}
-        onClose={() => setModal(false)}
-        justify="center"
-        css={{
-          background: 'transparent !important',
-          borderRadius: '0px !important',
-        }}
-      >
-        <div style={{ margin: 'auto' }}>
-          <iframe width="850" height="505" src="https://www.youtube.com/embed/hW98BFnVCm8" title="Cartsy - Super Fast WooCommerce Theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
-      </Modal>
+      {/*<Modal*/}
+      {/*  blur*/}
+      {/*  width='850px'*/}
+      {/*  aria-labelledby="Search Panel"*/}
+      {/*  open={openModal}*/}
+      {/*  onClose={() => setModal(false)}*/}
+      {/*  justify="center"*/}
+      {/*  css={{*/}
+      {/*    background: 'transparent !important',*/}
+      {/*    borderRadius: '0px !important',*/}
+      {/*  }}*/}
+      {/*>*/}
+      {/*  <div style={{ margin: 'auto' }}>*/}
+      {/*    <iframe width="850" height="505" src="https://www.youtube.com/embed/hW98BFnVCm8" title="Cartsy - Super Fast WooCommerce Theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>*/}
+      {/*  </div>*/}
+      {/*</Modal>*/}
     </Section>
   );
 };

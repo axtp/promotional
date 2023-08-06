@@ -14,8 +14,7 @@ import dashboard from 'common/assets/image/saasAppDark/mockup_highway_masterclas
 import {Modal} from '@nextui-org/react';
 import {useState} from 'react';
 import {Constants} from "../../../constants";
-import YoutubeVideo from "common/components/YoutubeVideo";
-import {important} from "polished";
+import {PandaVideo} from "common/components/EmbeddedVideo/PandaVideo";
 
 const Banner = () => {
   const [openModal, setModal] = useState(false);
@@ -74,7 +73,7 @@ const Banner = () => {
           maxWidth: '800px',
         }}
       >
-          <YoutubeVideo videoId="hW98BFnVCm8" title="Masterclass - AXT PropTech Company" autoPlay={true}/>
+          <PandaVideo videoId="017c669c-1eed-44d2-9953-693d67a5a11b" title="Masterclass - AXT PropTech Company" autoPlay={true}/>
       </Modal>
     </Section>
   );

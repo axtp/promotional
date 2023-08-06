@@ -1,9 +1,7 @@
-import React, {useState, useEffect, useCallback, useRef, useLayoutEffect} from "react";
+import React, {useState, useEffect, useCallback, useRef} from "react";
 import PropTypes from "prop-types";
-const YoutubeVideo = ({ videoId, autoPlay, title }) => {
-  const videoURL = `https://www.youtube.com/embed/${videoId}${
-    autoPlay ? "?autoplay=1" : ""
-  }`;
+
+const EmbeddedVideo = ({videoUrl, title, id}) => {
   const iframeRef = useRef(null);
   const defaultHeight = 495;
   const [videoHeight, setVideoHeight] = useState(
@@ -39,7 +37,7 @@ const YoutubeVideo = ({ videoId, autoPlay, title }) => {
       ? iframeRef.current.offsetWidth * 0.5625
       : defaultHeight;
 
-    console.log("heigt, width", height,  iframeRef.current.offsetWidth)
+    console.log("heigt, width", height, iframeRef.current.offsetWidth)
 
     setVideoHeight(Math.floor(height * ratio));
     return function cleanup() {
@@ -49,28 +47,30 @@ const YoutubeVideo = ({ videoId, autoPlay, title }) => {
 
   return (
     <iframe
+      id={id}
       ref={iframeRef}
       title={title}
       width="100%"
       height={`${videoHeight}px`}
-      src={videoURL}
-      frameBorder="0"
+      src={videoUrl}
+      frameBorder={'none'}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
+      fetchpriority="high"
     />
   );
 };
 
-export default YoutubeVideo;
+export default EmbeddedVideo;
 
-YoutubeVideo.propTypes = {
+EmbeddedVideo.propTypes = {
+  id: PropTypes.string,
   title: PropTypes.string,
-  videoId: PropTypes.string,
-  autoPlay: PropTypes.bool,
+  videoUrl: PropTypes.string,
 };
 
-YoutubeVideo.defaultProps = {
+EmbeddedVideo.defaultProps = {
   title: "Some Video",
-  videoId: "",
-  autoPlay: false,
+  videoUrl: "",
+  id: "video-id"
 }
