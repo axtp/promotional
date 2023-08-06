@@ -1,4 +1,6 @@
 // menu items
+import {Constants} from "../../../constants";
+
 export const menu_items = [
   {
     label: 'Home',
@@ -35,8 +37,10 @@ import geekwire from 'common/assets/image/saasAppDark/clients/geekwire.png';
 import slack from 'common/assets/image/saasAppDark/clients/slack.png';
 import usaToday from 'common/assets/image/saasAppDark/clients/usa-today.png';
 import headphone from 'common/assets/image/saasAppDark/icons/headphone.svg';
-// monitoring section
-import rocket from 'common/assets/image/saasAppDark/icons/rocket.svg';
+// how it works section
+import clock from 'common/assets/image/saasAppDark/icons/clock.png';
+import calendar from 'common/assets/image/saasAppDark/icons/calendar.png';
+import map from 'common/assets/image/saasAppDark/icons/map.png';
 // service section
 import service1 from 'common/assets/image/saasAppDark/icons/service1.svg';
 import service2 from 'common/assets/image/saasAppDark/icons/service2.svg';
@@ -85,18 +89,24 @@ export const services = [
 ];
 
 
-export const monitoringFeatures = [
+export const howItWorksFeatures = [
   {
     id: 1,
-    icon: rocket,
-    title: 'Daily Graph analysis',
-    desc: `Stay on top of your task lists and stay in touch with what's happening by the latest UI updates`,
+    icon: map,
+    title: 'Onde',
+    desc: `A Masterclass será no Zoom, 100% Online e AO VIVO`,
+  },
+  {
+    id: 1,
+    icon: calendar,
+    title: 'Data',
+    desc: `Dia ${Constants.EventDates.Day}`,
   },
   {
     id: 2,
-    icon: headphone,
-    title: 'Communication Speedy',
-    desc: `Stay on top of your task lists and stay in touch with what's happening and what’s out.`,
+    icon: clock,
+    title: 'Hora',
+    desc: `Às ${Constants.EventDates.Time} (Horário de Brasília)`,
   },
 ];
 
@@ -217,7 +227,7 @@ export const testimonials = [
     logo: danielCovo,
     videoId: "926e270c-bff1-4681-9681-596be47a3b54",
     author: 'Danniel Covo',
-    designation: 'Pro-Trader, Investidor, CMO AXT PropTech S/A',
+    designation: 'Empresário, Investidor, CMO AXT PropTech S/A',
     quote: '"A gente vai fazer uma masterclass ensinando os princípios como participar desse jogo sem tem que ter aquelas quantidades absurdas de dinheiro..."',
   }
 ];

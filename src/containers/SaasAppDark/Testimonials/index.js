@@ -69,7 +69,7 @@ const Quote = styled.div`
 `
 
 const VideoButton = styled(PlayButton)`
-  left: 25%;
+  left: 30%;
   bottom: 10%;
   opacity: 0.8;
 

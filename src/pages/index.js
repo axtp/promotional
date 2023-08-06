@@ -5,7 +5,7 @@ import Banner from 'containers/SaasAppDark/Banner';
 import CallToAction from 'containers/SaasAppDark/CallToAction';
 import Clients from 'containers/SaasAppDark/Clients';
 import Footer from 'containers/SaasAppDark/Footer';
-import Monitoring from 'containers/SaasAppDark/Monitoring';
+import HowItWorks from 'containers/SaasAppDark/HowItWorks';
 import NewsFeed from 'containers/SaasAppDark/NewsFeed';
 import {ContentWrapper, GlobalStyle} from 'containers/SaasAppDark/saasAppDark.style';
 import Services from 'containers/SaasAppDark/Services';
@@ -56,14 +56,14 @@ const SaasAppDark = () => {
         <ContentWrapper>
           <StickyLogo/>
           <Banner/>
-          {/*<Clients/>*/}
-          {/*<Services/>*/}
-          {/*<Monitoring/>*/}
+          <Clients/>
+          <Services/>
           {/*<StatsCounter/>*/}
           <VideoIntro/>
           <Testimonials/>
-          {/*<CallToAction/>*/}
+          <HowItWorks/>
           {/*<NewsFeed/>*/}
+          {/*<CallToAction/>*/}
           {/*<AppDownload/>*/}
           <Footer/>
         </ContentWrapper>

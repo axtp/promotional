@@ -60,52 +60,25 @@ export const Grid = styled.div`
 
 export const FigureGroup = styled.div`
   position: relative;
-  margin-right: 45px;
-  @media only screen and (min-width: 768px) {
-    margin-right: 60px;
-    max-width: 570px;
-    margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  
+  img {
+    border-radius: 8px;
+    filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.7));
   }
-  @media only screen and (min-width: 1024px) {
-    margin-right: 25px;
-  }
-  @media only screen and (min-width: 1280px) {
-    margin-right: 105px;
-  }
-  .graph-2 {
-    position: absolute;
-    right: -45px;
-    bottom: 25px;
-    max-width: 175px;
-    @media only screen and (min-width: 768px) {
-      right: -45px;
-      bottom: -55px;
-      max-width: none;
-    }
-    @media only screen and (min-width: 1024px) {
-      right: -35px;
-      bottom: 25px;
-      max-width: 240px;
-    }
-    @media only screen and (min-width: 1280px) {
-      right: -95px;
-      bottom: -93px;
-      max-width: 370px;
-    }
-    @media only screen and (min-width: 1600px) {
-      max-width: none;
-    }
-  }
+  
 `;
 
 export const Content = styled.div`
   text-align: center;
+  flex-grow: 1;
   @media only screen and (min-width: 768px) and (max-width: 991px) {
     max-width: 530px;
   }
-  // @media only screen and (min-width: 991px) {
-  //   max-width: 750px;
-  // }
+   @media only screen and (min-width: 991px) {
+     max-width: 750px;
+   }
   @media only screen and (min-width: 992px) {
     text-align: left;
   }
@@ -181,7 +154,7 @@ export const FeatureList = styled.div`
   }
   .feature {
     display: grid;
-    max-width: 475px;
+    max-width: 600px;
     grid-column-gap: 30px;
     grid-template-columns: 50px 1fr;
     @media only screen and (max-width: 1023px) {
@@ -195,8 +168,9 @@ export const FeatureList = styled.div`
     }
     figure {
       margin: 15px 0 0;
+      max-width: 64px;
       @media only screen and (max-width: 768px) {
-        margin-top: 0;
+        margin: 0 auto;
       }
     }
     &:hover {
