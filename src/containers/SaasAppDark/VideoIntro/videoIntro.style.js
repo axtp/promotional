@@ -4,19 +4,19 @@ import styled from 'styled-components';
 const Section = styled.section`
   position: relative;
   z-index: 0;
-  padding-top: 195px;
-  @media only screen and (max-width: 1536px) {
-    padding-top: 130px;
-  }
-  @media only screen and (max-width: 1440px) {
-    padding-top: 120px;
-  }
-  @media only screen and (max-width: 820px) {
-    padding-top: 100px;
-  }
-  @media only screen and (max-width: 667px) {
-    padding-top: 70px;
-  }
+  padding-top: 20px;
+  //@media only screen and (max-width: 1536px) {
+  //  padding-top: 20px;
+  //}
+  //@media only screen and (max-width: 1440px) {
+  //  padding-top: 20px;
+  //}
+  //@media only screen and (max-width: 820px) {
+  //  padding-top: 100px;
+  //}
+  //@media only screen and (max-width: 667px) {
+  //  padding-top: 70px;
+  //}
 `;
 export default Section;
 
@@ -83,7 +83,18 @@ export const Figure = styled.figure`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 2rem 0;
   margin: 0 auto;
+  
+  img {
+    border-radius: 4px;
+    filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.7));
+    
+    @media (max-width: 400px){
+      max-width: none;
+    }
+  }
+  
   > div {
   }
   @media (min-width: 768px) {

@@ -2,10 +2,19 @@ import Heading from 'common/components/Heading';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import { videoIntro } from 'common/data/SaasAppDark';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Section, {
-  FeatureItem, IntroFeatures2, SectionHeading
+  FeatureItem, Figure, IntroFeatures2, SectionHeading
 } from './videoIntro.style';
+import NextImage from "common/components/NextImage";
+import {PlayButton} from "../Testimonials/testimonials.style";
+import {Modal} from "@nextui-org/react";
+import {PandaVideo} from "common/components/EmbeddedVideo/PandaVideo";
+import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
+import thumbnail from 'common/assets/image/saasAppDark/daniel_heuri_thumbnail.jpg';
+import styled from "styled-components";
+
+
 
 
 const VideoIntro = () => {
@@ -15,15 +24,16 @@ const VideoIntro = () => {
   return (
     <Section id="portfolio">
       <Container width="1170px">
+        <Figure>
+          <NextImage src={thumbnail} alt="video banner" />
+          <PlayButton onClick={() => setModal(true)}>
+            <img src={playIcon?.src} alt="play Icon" />
+          </PlayButton>
+        </Figure>
+
         <SectionHeading>
           <Text as="h2">Importante para</Text>
         </SectionHeading>
-        {/*<Figure>*/}
-        {/*  <NextImage src={banner} alt="video banner" />*/}
-        {/*  <PlayButton onClick={() => setModal(true)}>*/}
-        {/*    <img src={playIcon?.src} alt="play Icon" />*/}
-        {/*  </PlayButton>*/}
-        {/*</Figure>*/}
         <IntroFeatures2>
           {features.map((feature) => (
             <FeatureItem key={feature.id}>
@@ -47,22 +57,21 @@ const VideoIntro = () => {
           ))}
         </IntroFeatures2>
       </Container>
-      {/*<Modal*/}
-      {/*  blur*/}
-      {/*  width='850px'*/}
-      {/*  aria-labelledby="Search Panel"*/}
-      {/*  open={openModal}*/}
-      {/*  onClose={() => setModal(false)}*/}
-      {/*  justify="center"*/}
-      {/*  css={{*/}
-      {/*    background: 'transparent !important',*/}
-      {/*    borderRadius: '0px !important',*/}
-      {/*  }}*/}
-      {/*>*/}
-      {/*  <div style={{ margin: 'auto' }}>*/}
-      {/*    <iframe width="850" height="505" src="https://www.youtube.com/embed/hW98BFnVCm8" title="Cartsy - Super Fast WooCommerce Theme" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>*/}
-      {/*  </div>*/}
-      {/*</Modal>*/}
+      <Modal
+        blur
+        width="800px"
+        aria-labelledby="Search Panel"
+        open={openModal}
+        onClose={() => setModal(false)}
+        justify="center"
+        css={{
+          borderRadius: "8px !important",
+          maxWidth: '800px',
+        }}
+      >
+        <PandaVideo videoId="017c669c-1eed-44d2-9953-693d67a5a11b" title="Masterclass - AXT PropTech Company"
+                    autoPlay={true}/>
+      </Modal>
     </Section>
   );
 };

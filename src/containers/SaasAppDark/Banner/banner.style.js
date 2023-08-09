@@ -5,18 +5,18 @@ import styled from 'styled-components';
 
 const Section = styled.section`
 	position: relative;
-	z-index: 0;
+	z-index: 00;
 `;
 export default Section;
 
 export const BannerContentWrapper = styled.div`
-	@media (min-width: 1280px) {
-		min-height: 100vh;
-	}
+	//@media (min-width: 1280px) {
+	//	min-height: 100vh;
+	//}
 `;
 
 export const BannerContent = styled.div`
-	padding-top: 230px;
+	padding-top: 100px;
 	max-width: 915px;
 	margin: 0 auto;
 	text-align: center;
