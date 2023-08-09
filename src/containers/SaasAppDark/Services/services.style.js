@@ -32,7 +32,7 @@ export const SectionHeading = styled.div`
   max-width: 680px;
   margin: 0 auto 70px;
   h2 {
-    font-family: Noto Serif KR;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 30px;
     color: ${themeGet('colors.white')};
@@ -43,7 +43,7 @@ export const SectionHeading = styled.div`
     }
   }
   p {
-    font-family: Inter;
+    font-family: 'Roboto', sans-serif;
     font-size: 17px;
     line-height: 2.24;
     color: ${themeGet('colors.textColor')};
@@ -100,7 +100,7 @@ export const Item = styled.div`
   }
   h4 {
     color: ${themeGet('colors.white')};
-    font-family: Manrope;
+    font-family: 'Montserrat';
     font-weight: 600;
     font-size: 17px;
     line-height: 1.35;

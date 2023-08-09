@@ -36,6 +36,11 @@ const Figure = styled.figure`
     width: 200px;
     height: 300px;
   }
+
+  @media (max-width: 400px) {
+    display: none;
+  }
+
 `
 
 const HowItWorks = () => {

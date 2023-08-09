@@ -43,7 +43,7 @@ export const SectionHeading = styled.div`
     }
   }
   h2 {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
     line-height: 43px;
     margin-bottom: 22px;
@@ -101,7 +101,7 @@ export const Article = styled.article`
     font-size: 18px;
     line-height: 1.68;
     margin: 8px 0 0;
-    font-family: Manrope, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     @media screen and (max-width: 1024px) {
       font-size: 17px;
     }

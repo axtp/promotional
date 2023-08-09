@@ -36,9 +36,9 @@ const Banner = () => {
               className="animate__animated animate__fadeInUp"
               textAlign="justify"
               mt="2"
+              color="white"
             >
               Depois de <b>morar</b> nos <b>Estados Unidos</b> e conhecer cada detalhe desse mercado, eu vou te mostrar <b>no dia {Constants.EventDates.Day}, às {Constants.EventDates.Time} horas em uma MasterClass Exclusiva.</b> Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior mercado do mundo.</b>
-
             </Text>
             <Buttons>
               <Button

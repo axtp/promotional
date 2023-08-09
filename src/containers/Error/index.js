@@ -64,7 +64,6 @@ ErrorSec.defaultProps = {
     mb: ['20px', '25px', '25px', '25px', '35px'],
     lineHeight: '1.31',
     textAlign: 'center',
-    fontFamily: 'poppins',
     fontWeight: '600',
   },
   text: {

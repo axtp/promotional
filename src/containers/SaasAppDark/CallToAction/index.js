@@ -22,13 +22,13 @@ const PriceGroup = styled.div`
   }
 `
 
-const VideoIntro = () => {
+const CallToAction = () => {
   return (
     <Section id="">
       <BGImage>
         <SectionHeading>
           <Heading content="O MELHOR INVESTIMENTO QUE VOCÊ PODE FAZER" />
-          <Text>
+          <Text color="white">
             O que você vai aprender nesta Masterclass te fará economizar tempo, evitar erros comuns e, claro, evitar que você invista seu dinheiro de forma errada ou até no lugar errado!
           </Text>
 
@@ -36,21 +36,21 @@ const VideoIntro = () => {
             Você vai economizar tempo, erros e, principalmente, dinheiro.
           </Text>
 
-          <Text>
+          <Text color="white">
             Pior do que investir errado é levar prejuízo. Por isso é importante seguir a metodologia e os passos de quem sabe o que está fazendo!
           </Text>
 
-          <Text as="h5">
-            O valor dessa Masterclass <b>será R$ 197</b>, mas para essa primeira turma, o valor será <u>R$ 97 + o Encontro Presencial (Bônus)</u>
+          <Text as="h3">
+            O valor dessa Masterclass <b>será R$ 197</b>, <br/>mas para essa primeira turma, o valor será <u>R$ 97 + o Encontro Presencial (Bônus)</u>
           </Text>
 
-          <Text as="h3">
-            RESERVE SUA VAGA NA MASTERCLASS EXCLUSIVA DIA {Constants.EventDates.Day}, ÀS {Constants.EventDates.Time} HORAS
+          <Text as="h3" mt={8}>
+            RESERVE SUA VAGA NA MASTERCLASS <br/> EXCLUSIVA DIA {Constants.EventDates.Day}, ÀS {Constants.EventDates.Time} HORAS
           </Text>
 
 
           <PriceGroup>
-            <Text>POR APENAS</Text>
+            <Text color="white">POR APENAS</Text>
             <Text as="h1">R$ 97</Text>
           </PriceGroup>
 
@@ -62,4 +62,4 @@ const VideoIntro = () => {
   );
 };
 
-export default VideoIntro;
+export default CallToAction;

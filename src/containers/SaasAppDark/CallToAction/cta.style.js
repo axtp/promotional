@@ -70,7 +70,7 @@ export const SectionHeading = styled.div`
   }
   h2 {
     font-size: 38px;
-    font-weight: 900;
+    font-weight: 700;
     line-height: 55px;
     margin-bottom: 22px;
     @media only screen and (max-width: 991px) {

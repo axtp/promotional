@@ -1,14 +1,10 @@
-import { Modal } from '@nextui-org/react';
-import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
-import banner from 'common/assets/image/saasAppDark/video-banner.png';
 import Heading from 'common/components/Heading';
-import NextImage from 'common/components/NextImage';
 import Text from 'common/components/Text';
 import Container from 'common/components/UI/Container';
 import { videoIntro } from 'common/data/SaasAppDark';
 import { useState } from 'react';
 import Section, {
-  FeatureItem, Figure, IntroFeatures2, PlayButton, SectionHeading
+  FeatureItem, IntroFeatures2, SectionHeading
 } from './videoIntro.style';
 
 
@@ -45,7 +41,7 @@ const VideoIntro = () => {
               </svg>
               <div>
                 <Heading as="h4" content={feature.title} />
-                <Text as="p">{feature.desc}</Text>
+                <Text as="p" color="white">{feature.desc}</Text>
               </div>
             </FeatureItem>
           ))}

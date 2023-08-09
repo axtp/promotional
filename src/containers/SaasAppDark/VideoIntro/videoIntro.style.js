@@ -133,14 +133,17 @@ export const FeatureItem = styled.div`
   display: grid;
   align-items: center;
   grid-template-columns: max-content 1fr;
+  @media only screen and (max-width: 667px) {
+    align-items: flex-start;
+  }
+
   h4 {
-    font-family: Manrope;
-    font-weight: 700;
-    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
     line-height: 23px;
     margin-bottom: 10px;
   }
   p {
-    font-size: 15px;
+    font-size: 16px;
   }
 `;

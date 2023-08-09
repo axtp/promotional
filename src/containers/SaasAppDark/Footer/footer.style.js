@@ -69,7 +69,7 @@ export const AboutUs = styled.div`
 
 export const FooterWidget = styled.div`
   h4 {
-    font-family: 'Manrope', sans-serif;
+    font-family: ''Montserrat'', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.38;

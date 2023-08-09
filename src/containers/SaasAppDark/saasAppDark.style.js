@@ -71,16 +71,16 @@ export const GlobalStyle = createGlobalStyle`
   h4,
   h5,
   h6 {
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Montserrat', sans-serif;
     color: ${themeGet('colors.headingColor')} !important;
   }
 
   input, textarea {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   button {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
   }
 
   section {

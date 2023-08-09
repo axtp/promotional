@@ -15,7 +15,7 @@ export const Title = styled.div`
   align-items: center;
   justify-content: center;
   p {
-    font-family: Noto Serif KR;
+    font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;

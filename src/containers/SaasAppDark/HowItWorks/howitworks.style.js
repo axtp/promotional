@@ -97,7 +97,7 @@ export const Content = styled.div`
     }
   }
   h2 {
-    font-family: 'Noto Serif KR', serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 36px;
     color: ${themeGet('colors.white')};
@@ -119,7 +119,7 @@ export const Content = styled.div`
     }
   }
   .description {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 2;
     color: ${themeGet('colors.textColor')};
@@ -182,7 +182,7 @@ export const FeatureList = styled.div`
   .feature-content {
     h4 {
       color: ${themeGet('colors.white')};
-      font-family: Manrope;
+      font-family: 'Montserrat';
       font-size: 18px;
       line-height: 25px;
     }

@@ -35,7 +35,6 @@ export const SectionHeading = styled.div`
   }
   span {
     color: ${themeGet('colors.secondary')};
-    font-family: 'Caveat', cursive;
     font-weight: 700;
     font-size: 28px;
     color: ${themeGet('colors.secondary')};
@@ -49,7 +48,7 @@ export const SectionHeading = styled.div`
     }
   }
   h2 {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 30px;
     line-height: 43px;
     margin-bottom: 22px;
