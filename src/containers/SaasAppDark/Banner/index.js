@@ -32,7 +32,7 @@ const HeroVideo = styled.video`
   position: absolute;
   inset: 0;
   object-fit: cover;
-  height: 66vh;
+  height: 60vh;
   width: 100vw;
   z-index: -100;
   @media (max-width: 767px) {
@@ -43,11 +43,11 @@ const HeroVideo = styled.video`
 const VideoBlender = styled.div`
   position: absolute;
   inset: 0;
-  height: 66vh;
+  height: 60vh;
   width: 100vw;
   background-blend-mode: color-burn;
   background-color: rgba(0,0,0,0.4);
-  backdrop-filter: blur(5px);
+  //backdrop-filter: blur(2px);
   z-index: 0;
   @media (max-width: 767px) {
     display: none;
@@ -84,7 +84,7 @@ const Banner = () => {
     <Section id="home" >
           <VideoSection>
             <HeroVideo autoPlay loop muted >
-              <source src="video/robovice-banner.mp4"/>
+              <source src="video/banner-video.mp4"/>
             </HeroVideo>
             <VideoBlender />
           </VideoSection>
