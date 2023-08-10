@@ -12,9 +12,6 @@ import {Modal} from "@nextui-org/react";
 import {PandaVideo} from "common/components/EmbeddedVideo/PandaVideo";
 import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
 import thumbnail from 'common/assets/image/saasAppDark/daniel_heuri_thumbnail.jpg';
-import styled from "styled-components";
-
-
 
 
 const VideoIntro = () => {

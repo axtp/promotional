@@ -3,19 +3,12 @@ import Container from 'common/components/UI/Container';
 import Text from 'common/components/Text';
 import Button from 'common/components/Button';
 import { arrowRight2 } from 'react-icons-kit/icomoon/arrowRight2';
-import NextImage from 'common/components/NextImage';
 import Section, {
   BannerContentWrapper,
   BannerContent,
-  Buttons,
-  Figure,
 } from './banner.style';
-import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
-import dashboard from 'common/assets/image/saasAppDark/mockup_highway_masterclass.jpg';
-import {Modal} from '@nextui-org/react';
 import {useState} from 'react';
 import {Constants} from "../../../constants";
-import {PandaVideo} from "common/components/EmbeddedVideo/PandaVideo";
 import styled from "styled-components";
 import {Icon} from "react-icons-kit";
 import {themeGet} from "@styled-system/theme-get";

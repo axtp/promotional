@@ -8,7 +8,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import Section, {
   Content,
-  FeatureList, FigureGroup, Grid
+  FeatureList
 } from './howitworks.style';
 import styled from "styled-components";
 
