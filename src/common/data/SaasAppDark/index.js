@@ -304,6 +304,7 @@ export const footer = {
   ],
   contactInfo: {
     title: 'Contato',
+    cnpj: '48.565.176/0001-17',
     address: `Jundiai, SP, Brasil`,
     phone: `+55 11 91636-0102`,
     email: `info@axtp.com`,

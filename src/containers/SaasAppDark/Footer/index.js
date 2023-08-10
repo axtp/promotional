@@ -7,6 +7,7 @@ import { footer } from 'common/data/SaasAppDark';
 import { Icon } from 'react-icons-kit';
 import { paperPlane } from 'react-icons-kit/fa/paperPlane';
 import { ic_phone } from 'react-icons-kit/md/ic_phone';
+import { ic_business } from 'react-icons-kit/md/ic_business';
 import { ic_place } from 'react-icons-kit/md/ic_place';
 import {
   AboutUs, ContactInfo, FooterWidget, Grid, InfoItem, Section
@@ -19,7 +20,7 @@ const Footer = () => {
         <Grid>
           <AboutUs>
             <Image src={footer.about.logo?.src} alt="Web App Creative" />
-            <Text content={footer.about.text} />
+            <Text>{footer.about.text}</Text>
           </AboutUs>
           {footer.widgets.map((item) => (
             <FooterWidget key={item.id}>
@@ -39,6 +40,12 @@ const Footer = () => {
               <Icon icon={ic_place} size={24} />
               <Text>
                 {footer.contactInfo.address}
+              </Text>
+            </InfoItem>
+            <InfoItem>
+              <Icon icon={ic_business} size={22} />
+              <Text>
+                {footer.contactInfo.cnpj}
               </Text>
             </InfoItem>
             <InfoItem>
