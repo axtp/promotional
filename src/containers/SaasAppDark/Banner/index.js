@@ -77,7 +77,7 @@ const Banner = () => {
     <Section id="home" >
           <VideoSection>
             <HeroVideo autoPlay loop muted >
-              <source src="video/banner-video.mp4"/>
+              <source src="https://pub-00a9fcf6f2c04d8d9717c5f22ed90362.r2.dev/banner-video.mp4"/>
             </HeroVideo>
             <VideoBlender />
           </VideoSection>
