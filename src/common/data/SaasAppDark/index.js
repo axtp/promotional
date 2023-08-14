@@ -106,7 +106,7 @@ export const howItWorksFeatures = [
     id: 2,
     icon: clock,
     title: 'Hora',
-    desc: `Às ${Constants.EventDates.Time} (Horário de Brasília)`,
+    desc: `Às ${Constants.EventDates.Time} (Horário de Brasília) - Duração: 1 hora + tempo para Q&A`,
   },
 ];
 
