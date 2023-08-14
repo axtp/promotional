@@ -55,7 +55,7 @@ const CallToAction = () => {
           </PriceGroup>
 
 
-          <Button title="Quero Reserver Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
+          <Button title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
         </SectionHeading>
       </BGImage>
     </Section>

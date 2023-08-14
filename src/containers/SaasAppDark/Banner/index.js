@@ -104,7 +104,7 @@ const Banner = () => {
                 Exclusiva.</b> Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
                 mercado do mundo.</b>
               </Text>
-              <CTAButton title="Quero Reserver Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
+              <CTAButton title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
                 {/*<button className="button-two" onClick={() => setModal(true)}>*/}
                 {/*<span className="play-icon">*/}
                 {/*  <img src={playIcon?.src} alt="play Icon"/>*/}
