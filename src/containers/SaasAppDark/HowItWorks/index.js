@@ -1,4 +1,4 @@
-import masterclass from 'common/assets/image/saasAppDark/pexels-mikhail-nilov-7594414.jpg';
+import masterclass from 'common/assets/image/saasAppDark/pexels-michael-burrows-7129700.jpg';
 import Heading from 'common/components/Heading';
 import NextImage from 'common/components/NextImage';
 import Text from 'common/components/Text';

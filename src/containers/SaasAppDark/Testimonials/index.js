@@ -9,11 +9,7 @@ import Section, {
   ReactSlick,
   SectionHeading,
 } from './testimonials.style'
-import {useState} from "react";
-import {Modal} from "@nextui-org/react";
-import {PandaVideo} from "../../../common/components/EmbeddedVideo/PandaVideo";
 import styled from "styled-components";
-import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
 
 const settings = {
   infinite: true,
@@ -80,14 +76,6 @@ const VideoButton = styled(PlayButton)`
   }
 `
 const Testimonials = () => {
-  const [openModal, setModal] = useState(false);
-  const [testimonial, setTestimonial] = useState(testimonials[0]);
-
-  const handlePlayButtonClick = (t) => () => {
-    setTestimonial(t);
-    setModal(true)
-  }
-
   return (
     <Section id='testimonials'>
       <Container width='1300px'>
@@ -101,9 +89,6 @@ const Testimonials = () => {
               <Quote>
                 <PersonContainer>
                   <PersonImage src={testimonial.logo?.src} alt='logo'></PersonImage>
-                  {/*<VideoButton onClick={handlePlayButtonClick(testimonial)}>*/}
-                  {/*  <img src={playIcon?.src} alt="play Icon"/>*/}
-                  {/*</VideoButton>*/}
                 </PersonContainer>
                 <Text as='blockquote'>
                   {testimonial.quote}
@@ -118,20 +103,7 @@ const Testimonials = () => {
           ))}
         </ReactSlick>
       </Container>
-      <Modal
-        blur
-        width='800px'
-        aria-labelledby="Search Panel"
-        open={openModal}
-        onClose={() => setModal(false)}
-        justify="center"
-        css={{
-          borderRadius: "8px !important",
-          maxWidth: '800px',
-        }}
-      >
-        <PandaVideo videoId={testimonial.videoId} autoPlay={true} title={testimonial.author}/>
-      </Modal>
+
     </Section>
   )
 }

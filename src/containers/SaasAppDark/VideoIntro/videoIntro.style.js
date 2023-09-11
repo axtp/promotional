@@ -90,8 +90,9 @@ export const Figure = styled.figure`
     border-radius: 4px;
     filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.7));
     
-    @media (max-width: 400px){
+    @media (max-width: 480px){
       max-width: none;
+      width: unset !important;
     }
   }
   
