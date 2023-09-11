@@ -228,7 +228,7 @@ export const testimonials = [
     videoId: "926e270c-bff1-4681-9681-596be47a3b54",
     author: 'Danniel Covo',
     designation: 'Empresário, Investidor, CMO AXT PropTech S/A',
-    quote: '"A gente vai fazer uma masterclass ensinando os princípios como participar desse jogo sem tem que ter aquelas quantidades absurdas de dinheiro..."',
+    quote: '"Durante a masterclass, compartilharemos os princípios fundamentais e estratégias comprovadas para investir com confiança e alcançar sucesso financeiro nos imóveis dos EUA. Não perca esta oportunidade de aprender a investir de forma inteligente e segura no mercado imobiliário americano!"',
   }
 ];
 
