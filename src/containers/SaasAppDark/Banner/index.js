@@ -12,6 +12,7 @@ import {Constants} from "../../../constants";
 import styled from "styled-components";
 import {Icon} from "react-icons-kit";
 import {themeGet} from "@styled-system/theme-get";
+import Link from "next/link";
 
 const VideoSection = styled.div`
   position: absolute;
@@ -104,7 +105,9 @@ const Banner = () => {
                 Exclusiva.</b> Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
                 mercado do mundo.</b>
               </Text>
-              <CTAButton title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
+              <Link href="https://pay.hotmart.com/Y86635243A" target="_blank">
+                <CTAButton title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
+              </Link>
                 {/*<button className="button-two" onClick={() => setModal(true)}>*/}
                 {/*<span className="play-icon">*/}
                 {/*  <img src={playIcon?.src} alt="play Icon"/>*/}
