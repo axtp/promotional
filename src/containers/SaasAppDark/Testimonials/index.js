@@ -101,9 +101,9 @@ const Testimonials = () => {
               <Quote>
                 <PersonContainer>
                   <PersonImage src={testimonial.logo?.src} alt='logo'></PersonImage>
-                  <VideoButton onClick={handlePlayButtonClick(testimonial)}>
-                    <img src={playIcon?.src} alt="play Icon"/>
-                  </VideoButton>
+                  {/*<VideoButton onClick={handlePlayButtonClick(testimonial)}>*/}
+                  {/*  <img src={playIcon?.src} alt="play Icon"/>*/}
+                  {/*</VideoButton>*/}
                 </PersonContainer>
                 <Text as='blockquote'>
                   {testimonial.quote}

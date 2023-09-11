@@ -43,7 +43,7 @@ const VideoBlender = styled.div`
   //backdrop-filter: blur(2px);
   z-index: 0;
   @media (max-width: 767px) {
-    display: none;
+    display: none;C
   }
   
 `

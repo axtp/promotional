@@ -6,6 +6,7 @@ import { arrowRight2 } from 'react-icons-kit/icomoon/arrowRight2';
 import Section, { BGImage, SectionHeading } from './cta.style';
 import {Constants} from "../../../constants";
 import styled from "styled-components";
+import Link from "next/link";
 
 const PriceGroup = styled.div`
   margin: 3rem auto 0;
@@ -51,12 +52,14 @@ const CallToAction = () => {
 
           <PriceGroup>
             <Text color="white">POR APENAS</Text>
-            <Text as="h1">R$ 97</Text>
+            <Text as="h1" color="#a9fd00 !important">R$ 97</Text>
           </PriceGroup>
 
 
-          <Button title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
-        </SectionHeading>
+          <Link href="#" target="_blank">
+            <Button title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
+          </Link>
+          </SectionHeading>
       </BGImage>
     </Section>
   );

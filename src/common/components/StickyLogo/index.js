@@ -14,6 +14,7 @@ const Container = styled.div`
   z-index: 1000;
   width: 200px;
   gap: 0 1rem;
+  min-width: 200px;
   @media (max-width: 480px) {
     width: 80px
   }
