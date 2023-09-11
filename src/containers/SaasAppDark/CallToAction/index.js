@@ -56,7 +56,7 @@ const CallToAction = () => {
           </PriceGroup>
 
 
-          <Link href="#" target="_blank">
+          <Link href="https://pay.hotmart.com/Y86635243A" target="_blank">
             <Button title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2} />} iconPosition="right" />
           </Link>
           </SectionHeading>
