@@ -55,7 +55,7 @@ export const FeatureItem = styled.div`
     margin-left: 0.5rem;
     padding: 0.5rem 0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 23px;
   }
 `;
