@@ -76,7 +76,7 @@ export const BannerContent = styled.div`
 			font-size: 32px;
 		}
 		@media (max-width: 480px) {
-			font-size: 24px;
+			font-size: 28px;
 		}
 	}
 	p {

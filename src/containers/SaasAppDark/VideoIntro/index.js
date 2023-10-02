@@ -11,7 +11,7 @@ import {PlayButton} from "../Testimonials/testimonials.style";
 import {Modal} from "@nextui-org/react";
 import {PandaVideo} from "common/components/EmbeddedVideo/PandaVideo";
 import playIcon from 'common/assets/image/saasAppDark/icons/play.svg';
-import thumbnail from 'common/assets/image/saasAppDark/daniel_heuri_thumbnail.jpg';
+import thumbnail from 'common/assets/image/saasAppDark/thumbnail.jpg';
 
 
 const VideoIntro = () => {
@@ -66,7 +66,7 @@ const VideoIntro = () => {
           maxWidth: '800px',
         }}
       >
-        <PandaVideo videoId="017c669c-1eed-44d2-9953-693d67a5a11b" title="Masterclass - AXT PropTech Company"
+        <PandaVideo videoId="5c7ac03a-f519-413a-a3a9-d7d4ef94b0a3" title="Masterclass - AXT PropTech Company"
                     autoPlay={true}/>
       </Modal>
     </Section>
