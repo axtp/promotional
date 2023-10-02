@@ -127,7 +127,7 @@ const Banner = () => {
                 Depois de <b>morar</b> nos <b>Estados Unidos</b> e conhecer cada detalhe desse mercado, eu vou te
                 mostrar <Highlight><b><u>no dia {Constants.EventDates.Day},
                 às {Constants.EventDates.Time} horas</u> em uma
-                MasterClass Exclusiva.</b></Highlight> Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
+                MasterClass Exclusiva.</b></Highlight> Entenda quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
                 mercado do mundo.</b>
               </Text>
             </OnDesktop>
