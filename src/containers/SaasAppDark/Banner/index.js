@@ -134,7 +134,7 @@ const Banner = () => {
             <OnMobile>
               <Text as="h5">
                 <Highlight>
-                  Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
+                  Entenda quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
                   mercado do mundo.</b>
                 </Highlight>
               </Text>

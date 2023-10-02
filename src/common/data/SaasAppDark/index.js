@@ -252,7 +252,7 @@ export const testimonials = [
     designation: 'CEO NXT Advisors, CEO AXT PropTech S/A',
     bio: () => (
       <>
-        São de <b>38 anos</b> de atuação no mercado financeiro internacional e nacional, tendo gerenciado mais de <b>5
+        São mais de <b>38 anos</b> de atuação no mercado financeiro internacional e nacional, tendo gerenciado mais de <b>5
         bilhões de reais</b>, com milhares de famílias atendidas.<br/>
         Um dos poucos <b>Consultores CVM</b> do Brasil. Título alcançado depois de anos de experiência.<br/><br/>
         De família suíça e morando no Brasil hoje, ele já visitou os maiores mercados, instituições e bancos do mundo,
