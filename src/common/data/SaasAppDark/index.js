@@ -57,6 +57,7 @@ import post3 from 'common/assets/image/saasAppDark/post3.png';
 import danielHeuri from 'common/assets/image/saasAppDark/daniel_heuri.jpg';
 import danielCovo from 'common/assets/image/saasAppDark/daniell_covo.jpg';
 import logo3 from 'common/assets/image/saasAppDark/tm-logo3.svg';
+
 export const clients = [envato, evernote, forbes, geekwire, slack, usaToday];
 
 
@@ -150,7 +151,7 @@ export const statsCounter = {
 };
 
 // video intro section
-export const videoIntro = {
+export const importantFeatures = {
   features: [
     {
       id: 1,
@@ -176,6 +177,35 @@ export const videoIntro = {
       id: 5,
       title: 'Conhecer novas oportunidades',
       desc: 'Você que busca entender mais os caminhos e oportunidades a serem exploradas nesse mercado.',
+    },
+  ],
+};
+
+export const classContents = {
+  items: [
+    {
+      id: 1,
+      text: 'Os melhores caminhos para investir no mercado imobiliário americano.',
+    },
+    {
+      id: 2,
+      text: 'Como investir com segurança em imóveis nos Estados Unidos.',
+    },
+    {
+      id: 3,
+      text: 'Entenda os detalhes e burocracias necessárias para não perder dinheiro ou investir errado.',
+    },
+    {
+      id: 4,
+      text: 'Identificar as melhores oportunidades para cada momento e ciclo de mercado',
+    },
+    {
+      id: 5,
+      text: 'Terá acesso aos melhores lugares e formas para investir.',
+    },
+    {
+      id: 6,
+      text: 'Informações necessárias para tomar as melhores decisões.',
     },
   ],
 };
@@ -220,6 +250,15 @@ export const testimonials = [
     videoId: '926e270c-bff1-4681-9681-596be47a3b54',
     author: 'Daniel Heuri',
     designation: 'CEO NXT Advisors, CEO AXT PropTech S/A',
+    bio: () => (
+      <>
+        São de <b>38 anos</b> de atuação no mercado financeiro internacional e nacional, tendo gerenciado mais de <b>5
+        bilhões de reais</b>, com milhares de famílias atendidas.<br/>
+        Um dos poucos <b>Consultores CVM</b> do Brasil. Título alcançado depois de anos de experiência.<br/><br/>
+        De família suíça e morando no Brasil hoje, ele já visitou os maiores mercados, instituições e bancos do mundo,
+        conhecendo os melhores caminhos para investir internacionalmente
+      </>
+    ),
     quote: '"A gente vai fazer uma masterclass ensinando os princípios como participar desse jogo sem tem que ter aquelas quantidades absurdas de dinheiro..."',
   },
   {
@@ -228,6 +267,10 @@ export const testimonials = [
     videoId: "926e270c-bff1-4681-9681-596be47a3b54",
     author: 'Danniel Covo',
     designation: 'Empresário, Investidor, CMO AXT PropTech S/A',
+    bio: () => <>
+      <b>Morou nos Estados Unidos</b> e construiu sua vida através dos investimentos. Dessa forma, ele conhece detalhamento os melhores caminhos e oportunidades para investir no mercado imobiliário americano.<br/><br/>
+      Além de ter muitos amigos e parceiros nos Estados Unidos. Atualmente, ajuda pessoas que desejam construir patrimônio e renda passiva com imóveis. É empresário, investidor e fundador da <b>AXT PROPTECH</b>.
+    </>,
     quote: '"Durante a masterclass, compartilharemos os princípios fundamentais e estratégias comprovadas para investir com confiança e alcançar sucesso financeiro nos imóveis dos EUA. Não perca esta oportunidade de aprender a investir de forma inteligente e segura no mercado imobiliário americano!"',
   }
 ];

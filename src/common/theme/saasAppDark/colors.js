@@ -19,6 +19,8 @@ const colors = {
   linkColor: "rgba(203,149,120,0.8)", // 15
   primaryBoxShadow: '0px 8px 20px -6px rgba(42, 162, 117, 0.57)',
   secondaryBoxShadow: '0px 8px 20px -6px rgba(237, 205, 55, 0.5)',
+  green: '#15E49E',
+  brightGreen:'#a9fd00'
 };
 
 export default colors;

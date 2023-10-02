@@ -14,6 +14,8 @@ import {themeGet} from "@styled-system/theme-get";
 import Link from "next/link";
 import BannerImage from 'common/assets/image/saasAppDark/lady-liberty.jpg';
 import {OnMobile, OnDesktop} from "common/components/Responsive";
+import colors from "../../../common/theme/app/colors";
+import {HydratedCTAButton} from "../../../common/components/CTAButton";
 
 const MediaSection = styled.div`
   position: absolute;
@@ -21,6 +23,10 @@ const MediaSection = styled.div`
   background-position: center;
   background-size: cover;
   z-index: -100;
+`
+
+const Highlight = styled.span`
+  color: ${colors.highlight} !important;
 `
 
 const HeroVideo = styled.video`
@@ -119,32 +125,24 @@ const Banner = () => {
                 color="white"
               >
                 Depois de <b>morar</b> nos <b>Estados Unidos</b> e conhecer cada detalhe desse mercado, eu vou te
-                mostrar <b><u>no dia {Constants.EventDates.Day}, às {Constants.EventDates.Time} horas</u> em uma
-                MasterClass
-                Exclusiva.</b> Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
+                mostrar <Highlight><b><u>no dia {Constants.EventDates.Day},
+                às {Constants.EventDates.Time} horas</u> em uma
+                MasterClass Exclusiva.</b></Highlight> Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
                 mercado do mundo.</b>
               </Text>
             </OnDesktop>
             <OnMobile>
-              <Text as="h5" color="#a9fd00 !important">
-                Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
-                mercado do mundo.</b>
+              <Text as="h5">
+                <Highlight>
+                  Quais são os melhores caminhos para <b>investir</b> no mercado imobiliário, <b>o maior
+                  mercado do mundo.</b>
+                </Highlight>
               </Text>
               <Text as="h4">
                 <b>No dia {Constants.EventDates.Day}, às {Constants.EventDates.Time} horas</b>
               </Text>
             </OnMobile>
-            <Link href="https://pay.hotmart.com/Y86635243A" target="_blank">
-              <CTAButton title="Quero Reservar Minha Vaga" icon={<Icon icon={arrowRight2}/>} iconPosition="right"/>
-            </Link>
-            {/*<button className="button-two" onClick={() => setModal(true)}>*/}
-            {/*<span className="play-icon">*/}
-            {/*  <img src={playIcon?.src} alt="play Icon"/>*/}
-            {/*</span>*/}
-            {/*  <span className="btn-txt">*/}
-            {/*  <span className="primary">Assista</span> Vídeo de Introdução*/}
-            {/*</span>*/}
-            {/*</button>*/}
+            <HydratedCTAButton/>
           </BannerContent>
         </BannerContentWrapper>
       </Container>

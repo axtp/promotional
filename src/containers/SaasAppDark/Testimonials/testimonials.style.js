@@ -140,6 +140,7 @@ export const Item = styled.div`
 export const AuthorInfo = styled.div`
   position: relative;
   margin-top: auto;
+  padding-top: 1rem;
 `
 
 export const PlayButton = styled.button`

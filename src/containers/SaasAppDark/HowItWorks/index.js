@@ -1,4 +1,4 @@
-import masterclass from 'common/assets/image/saasAppDark/pexels-michael-burrows-7129700.jpg';
+import masterclass from 'common/assets/image/saasAppDark/masterclass.jpg';
 import Heading from 'common/components/Heading';
 import NextImage from 'common/components/NextImage';
 import Text from 'common/components/Text';
@@ -28,10 +28,14 @@ const Figure = styled.figure`
   width: 400px;
   height: 600px;
   margin: 0 auto;
+
   img {
     border-radius: 8px;
-    filter: drop-shadow(0px 4px 10px rgba(0,0,0,0.7));
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.7));
+    object-fit: cover;
+    object-position: -580px;
   }
+
   @media (max-width: 768px) {
     width: 200px;
     height: 300px;
@@ -49,14 +53,14 @@ const HowItWorks = () => {
       <Container width="1300px">
         <Box>
           <Content>
-            <Text className="subtitle">
-              Masterclass
+            <Text as="h2">
+              MASTERCLASS
             </Text>
-            <Heading content="Como vai funcionar"/>
+            <Heading content="Como vai funcionar?"/>
             <Text
-              className="description"
+              as="description"
             >
-              Os participantes do primeiro lote, ganharam o ingresso para a próxima Masterclass Presencial em SP
+              Os participantes do primeiro lote, ganharão o ingresso para a próxima Masterclass Presencial em SP
             </Text>
             <FeatureList>
               {howItWorksFeatures?.map((feature) => (
@@ -65,7 +69,7 @@ const HowItWorks = () => {
                     <img src={feature?.icon?.src} alt="feature icon"/>
                   </figure>
                   <div className="feature-content">
-                    <Text >{feature.title}</Text>
+                    <Text>{feature.title}</Text>
                     <Text as="h4">{feature.desc}</Text>
                   </div>
                 </div>

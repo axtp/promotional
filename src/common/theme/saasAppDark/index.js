@@ -22,14 +22,6 @@ export const theme = {
   radius: [0, 3, 5, 10, 15, 20, 25, 50, 60, '50%'],
   colors,
   colorStyles: {
-    primary: {
-      color: colors.primary,
-      borderColor: colors.primary,
-      '&:hover': {
-        color: colors.primaryHover,
-        borderColor: colors.primaryHover,
-      },
-    },
     secondary: {
       color: colors.secondary,
       borderColor: colors.secondary,

@@ -4,15 +4,16 @@ import Text from 'common/components/Text'
 import Container from 'common/components/UI/Container'
 import {testimonials} from 'common/data/SaasAppDark'
 import Section, {
-  AuthorInfo, Figure,
-  Item, PlayButton,
-  ReactSlick,
+  AuthorInfo, Item, ReactSlick,
   SectionHeading,
 } from './testimonials.style'
 import styled from "styled-components";
+import {useEffect, useRef} from "react";
 
 const settings = {
   infinite: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
   speed: 500,
   slidesToShow: 2,
   slidesToScroll: 1,
@@ -40,6 +41,7 @@ const PersonContainer = styled.div`
   position: relative;
   height: 100%;
   width: 100%;
+  min-width: 140px;
   margin: 0 auto;
 `
 
@@ -64,34 +66,34 @@ const Quote = styled.div`
   }
 `
 
-const VideoButton = styled(PlayButton)`
-  left: 30%;
-  bottom: 10%;
-  opacity: 0.8;
+const Experts = () => {
 
-  @media (max-width: 600px) {
-    left: 40%;
-    flex-direction: column;
-    align-items: center;
-  }
-`
-const Testimonials = () => {
+  const sliderRef = useRef();
+
+  useEffect(() => {
+
+    if(sliderRef.current){
+      sliderRef.current.slickPlay()
+    }
+
+  }, [sliderRef])
+
   return (
-    <Section id='testimonials'>
+    <Section id='experts'>
       <Container width='1300px'>
         <SectionHeading>
           <Text as='span'>Os Especialistas</Text>
           <Heading content='Conheça um pouco dos especialistas que estarão nesta Masterclass'/>
         </SectionHeading>
-        <ReactSlick {...settings}>
+        <ReactSlick ref={sliderRef} {...settings}>
           {testimonials.map((testimonial) => (
             <Item key={testimonial.id}>
               <Quote>
                 <PersonContainer>
                   <PersonImage src={testimonial.logo?.src} alt='logo'></PersonImage>
                 </PersonContainer>
-                <Text as='blockquote'>
-                  {testimonial.quote}
+                <Text as='p'>
+                  {testimonial.bio()}
                 </Text>
               </Quote>
               <AuthorInfo>
@@ -108,4 +110,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default Experts
