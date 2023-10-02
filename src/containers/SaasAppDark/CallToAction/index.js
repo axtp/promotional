@@ -4,6 +4,9 @@ import Section, {BGImage, SectionHeading} from './cta.style';
 import {Constants} from "../../../constants";
 import styled from "styled-components";
 import {HydratedCTAButton} from "../../../common/components/CTAButton";
+import Link from "next/link";
+import Button from "common/components/Button";
+import {themeGet} from "@styled-system/theme-get";
 
 const Centered = styled.div`
   text-align: center;
@@ -26,6 +29,34 @@ const PriceGroup = styled.div`
 
   @media (max-width: 768px) {
     width: 100%;
+  }
+`
+
+export const ContactButton = styled.button`
+  text-align: center;
+  border-radius: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  padding: 8px 6px;
+  color: ${themeGet('colors.black')};
+  background-color: ${themeGet('colors.green')};
+  transition: all 300ms ease-in-out;
+
+  .btn-icon {
+    margin-left: 4px;
+  }
+
+  //@media (max-width: 1023px) {
+  //  padding: 20px 22px;
+  //}
+  //@media (max-width: 767px) {
+  //  padding: 17px 18px;
+  //  font-size: 16px;
+  //}
+
+  &:hover {
+    background-color: ${themeGet('colors.green')} !important;
+    filter: saturate(1.4);
   }
 `
 
@@ -66,9 +97,16 @@ const CallToAction = () => {
           </PriceGroup>
         </SectionHeading>
         <Centered>
-
           <HydratedCTAButton/>
         </Centered>
+
+        <SectionHeading style={{marginTop: "12rem", padding: "2rem", borderTop: "1px solid rgba(255,255,255,0.1)"}}>
+          <Heading content="QUALQUER DÚVIDA, ENTRE EM CONTATO" style={{fontSize: "22px"}}/>
+          <Link href={`https://wa.me/5511916360102?text=${encodeURIComponent("Olá, gostaria de saber mais sobre a MasterClass.")}`} target="_blank">
+            <ContactButton type="button">FALAR COM ESPECIALISTA</ContactButton>
+            {/*<Image src={WhatsAppLogo} width={48} alt="Fala consosco via Whatsapp"/>*/}
+          </Link>
+        </SectionHeading>
       </BGImage>
     </Section>
   );
